@@ -129,7 +129,7 @@ def get_original_unzip_filename(dataset, full=True):
             logging.info("running: {}".format(cmd))
             os.system(cmd)
 
-            cmd = "./script_convert_trace_to_snapshot.sh -f {} -o {}".format(file_temp, file_out)
+            cmd = "./convert_trace_to_snapshot.sh -f {} -o {}".format(file_temp, file_out)
             run_cmd(cmd)
         else:
             logging.info("original_filename exists: {}".format(file_out))
@@ -314,7 +314,7 @@ def create_probability_injected_fail_file(dataset, pif, trial):
     :return:
     '''
 
-    cmd = "./script_emulate_snapshot_failures.sh "
+    cmd = "./emulate_snapshot_failures.sh "
     cmd += "-i {} ".format(get_original_filename(dataset))
     cmd += "-o {} ".format(get_prob_failed_filename(dataset, pif, trial))
     cmd += "-r {} ".format(trial)

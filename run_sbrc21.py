@@ -194,7 +194,7 @@ def create_failed_file(dataset, pif, trial):
     :return:
     '''
 
-    cmd = "./script_emulate_snapshot_failures.sh "
+    cmd = "./emulate_snapshot_failures.sh "
     cmd += "-i {} ".format(get_original_filename(dataset))
     cmd += "-o {} ".format(get_failed_filename(dataset, pif, trial))
     cmd += "-r {} ".format(trial)

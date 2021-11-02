@@ -166,7 +166,7 @@ def main():
         logging.info("cmd: {}".format(cmd))
         os.system(cmd)
 
-    cmd = "./script_convert_trace_to_snapshot.sh -f {} -o {}".format(temp_file_name, args.output)
+    cmd = "./convert_trace_to_snapshot.sh -f {} -o {}".format(temp_file_name, args.output)
     run_cmd(cmd)
 
     if args.delete:
