@@ -8,9 +8,6 @@ Algorithm for correcting sessions of users of large-scale networked systems base
 
 ## Input parameters:
 
-Torrent Trace Correct - Machine Learning
-
-
     Arguments(run_NOMS22.py):
         
         -h, --help          Show this help message and exit
