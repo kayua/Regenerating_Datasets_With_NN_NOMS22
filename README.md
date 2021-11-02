@@ -26,26 +26,35 @@ Torrent Trace Correct - Machine Learning
    
     Arguments(main.py):
 
-        -h,--help                 |   Show this help message and exit
-        --original_swarm_file     |   File of ground truth.
-        --training_swarm_file     |   File of training samples
-        --corrected_swarm_file    |   File of correction
-        --failed_swarm_file       |   File of failed swarm
-        --analyse_file            |   Analyse results with statistics
-        --analyse_file_mode       |   Open mode (e.g. 'w' or 'a')
-        --model_architecture_file |   Full model architecture file
-        --model_weights_file      |   Full model weights file
-        --num_epochs              |   Number of epochs
-        --threshold               |   i.e. alpha (e.g. 0.5 - 0.95)
-        --dense_layers            |   Number of dense layers (e.g. 1, 2, 3)
-        --pif PIF                 |   pif (only for statistics)
-        --dataset DATASET         |   Dataset (only for statistics)
-        --seed SEED               |   Seed (only for statistics)
-        --skip_train, -t          |   Skip training of the machine learning model
-        --skip_correct, -c        |   Skip correction of the dataset
-        --skip_analyse, -a        |   Skip analyzis of the results
-        --verbosity VERBOSITY, -v |   Verbosity logging level (INFO=20 DEBUG=10)
-
+        -h, --help                Show this help message and exit
+        --original_swarm_file     File of ground truth.
+        --training_swarm_file     File of training samples
+        --corrected_swarm_file    File of correction
+        --validation_swarm_file   File of validation
+        --failed_swarm_file       File of failed swarm
+        --analyse_file            Analyse results with statistics
+        --dense_layers            Number of dense layers (e.g. 1, 2, 3)
+        --neurons NEURONS         Number neurons per layer
+        --cells CELLS             Numbers cells(neurons) LSTM
+        --num_sample_training     Number samples for training
+        --num_epochs              Number epochs training
+        --analyse_file_mode       Open mode (e.g. 'w' or 'a')
+        --model_architecture_file Full model architecture file
+        --model_weights_file      Full model weights file
+        --size_window_left        Left window size
+        --size_window_right       Right window size
+        --threshold               i.e. alpha (e.g. 0.5 - 0.95)
+        --pif PIF                 Pif (only for statistics)
+        --dataset DATASET         Dataset (only for statistics)
+        --seed SEED               Seed (only for statistics)
+        --lstm_mode               Activate LSTM mode
+        --no-lstm_mode            Deactivate LSTM mode
+        --skip_train, -t          Skip training of the machine learning model
+        --deterministic_mode      Set deterministic correction mode
+        --skip_correct, -c        Skip correction of the dataset
+        --skip_analyse, -a        Skip analysis of the results
+        --verbosity, -v           Verbosity logging level (INFO=20 DEBUG=10)
+        --mode MODE               Mode
 
         --------------------------------------------------------------
         Full traces available at: https://github.com/ComputerNetworks-UFRGS/TraceCollection/tree/master/01_traces
