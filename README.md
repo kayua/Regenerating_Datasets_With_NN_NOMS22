@@ -2,7 +2,9 @@
 
 Algorithm for correcting sessions of users of large-scale networked systems based on deep learning.
 
-
+![Examples of traces: ground truth (obtained with 27 monitors), failed
+(obtained with 7 monitors/20 failed), and recovered (using NN).](plots/example3.png?raw=true "Examples of traces: ground truth (obtained with 27 monitors), failed
+(obtained with 7 monitors/20 failed), and recovered (using NN).")
 
 ## Input parameters:
 
