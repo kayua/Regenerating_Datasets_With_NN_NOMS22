@@ -1,6 +1,6 @@
-# Correcting Datasets - Deep Learning (SBRC21)
+# Regenerating Networked Systems’ Monitoring Traces with Neural Networs (submitted to NOMS'22)
 
-Algorithm for correcting sessions of users of large-scale peer-to-peer systems based on deep learning.
+Algorithm for correcting sessions of users of large-scale networked systems based on deep learning.
 
 
 
@@ -9,7 +9,7 @@ Algorithm for correcting sessions of users of large-scale peer-to-peer systems b
 Torrent Trace Correct - Machine Learning
 
 
-    Arguments(run_SBRC21.py):
+    Arguments(run_NOMS22.py):
         
         -h, --help              |   Show this help message and exit
         --output                |   Full name of the output file with analysis results (default=sbrc21.txt)
@@ -48,10 +48,10 @@ Torrent Trace Correct - Machine Learning
         --------------------------------------------------------------
         Full traces available at: https://github.com/ComputerNetworks-UFRGS/TraceCollection/tree/master/01_traces
 
-#  Run (all experiments):
-`python3 run_sbrc21.py -c sbrc`
+#  Run (all F_prob experiments):
+`python3 run_nom22.py -c lstm`
 
-# Run (only one scenario)
+# Run (only one F_prob scenario)
 `python3 main.py`
 
 ## Requirements:
