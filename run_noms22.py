@@ -300,7 +300,6 @@ def main():
 
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
-    #datasets = ["S1a", "S1b", "S1c", "S1d"]
     datasets = ["S1"]
 
     c1 = Campaign(datasets=datasets, dense_layers=[3], thresholds=[.75], pifs=[.01, .02, .05, .10, .15, .20, .25, .40, .50],
@@ -308,21 +307,19 @@ def main():
     c2 = Campaign(datasets=datasets, dense_layers=[1, 5], thresholds=[.75], pifs=[.10], rna="no-lstm_mode", windows=[11])
     c3 = Campaign(datasets=datasets, dense_layers=[3], thresholds=[.50, .95], pifs=[.10], rna="lstm_mode", windows=[11])
     c4 = Campaign(datasets=datasets, dense_layers=[3], thresholds=[.75], pifs=[.10], rna="lstm_mode", windows=[7, 21])
-
-    ce = Campaign(datasets=["S4"], dense_layers=[3], thresholds=[.75], pifs=[None], rna="no-lstm_mode", windows=[11])
-
+    
     cdemo = Campaign(datasets=datasets, dense_layers=[3], thresholds=[0.75], pifs=[0.10], rna="no-lstm_mode", windows=[11])
     campaigns = [cdemo]
 
     if args.campaign == "no-lstm":
         campaigns = [c1, c2, c3, c4]
-        #campaigns = [c4]
+     
         for c in campaigns:
             c.rna = "no-lstm_mode"
 
     elif args.campaign == "lstm":
         campaigns = [c1, c2, c3, c4]
-        #campaigns = [c4]
+   
         for c in campaigns:
             c.rna = "lstm_mode"
 
