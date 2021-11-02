@@ -309,7 +309,6 @@ def main():
     c3 = Campaign(datasets=datasets, dense_layers=[3], thresholds=[.50, .95], pifs=[.10], rna="lstm_mode", windows=[11])
     c4 = Campaign(datasets=datasets, dense_layers=[3], thresholds=[.75], pifs=[.10], rna="lstm_mode", windows=[7, 21])
 
-    cd = Campaign(datasets=datasets, dense_layers=[3], thresholds=[.50], pifs=[.10], rna="deterministic_mode", windows=[5])
     ce = Campaign(datasets=["S4"], dense_layers=[3], thresholds=[.75], pifs=[None], rna="no-lstm_mode", windows=[11])
 
     cdemo = Campaign(datasets=datasets, dense_layers=[3], thresholds=[0.75], pifs=[0.10], rna="no-lstm_mode", windows=[11])
@@ -326,10 +325,6 @@ def main():
         #campaigns = [c4]
         for c in campaigns:
             c.rna = "lstm_mode"
-
-    elif args.campaign == "deterministic":
-        campaigns = [cd]
-        args.skip_train = True
 
 
     logging.info("\n\n\n")
