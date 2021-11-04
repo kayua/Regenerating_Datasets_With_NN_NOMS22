@@ -8,9 +8,6 @@ Algorithm for correcting sessions of users of large-scale networked systems base
 
 ## Input parameters:
 
-Torrent Trace Correct - Machine Learning
-
-
     Arguments(run_NOMS22.py):
         
         -h, --help          Show this help message and exit
@@ -58,11 +55,17 @@ Torrent Trace Correct - Machine Learning
         --------------------------------------------------------------
         Full traces available at: https://github.com/ComputerNetworks-UFRGS/TraceCollection/tree/master/01_traces
 
-#  Run (all F_prob experiments):
+##  Run (all F_prob experiments):
 `python3 run_nom22.py -c lstm`
 
-# Run (only one F_prob scenario)
+## Run (only one F_prob scenario)
 `python3 main.py`
+
+##  Run (all F_mon experiments):
+`python3 run_mif.py -c lstm`
+
+## Run (only one F_mon scenario)
+`python3 main_mif.py`
 
 ## Requirements:
 

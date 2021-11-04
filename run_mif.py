@@ -385,21 +385,12 @@ def main():
     print_config(args)
 
     os.environ['CUDA_VISIBLE_DEVICES'] = '0' #0
-    #datasets = ["S1a", "S1b", "S1c", "S1d"]
-    datasets = [3]
-    #mif = 20 piores monitores (3,4MB). ultima escala antes de 21 (3,5MB), que é equivalente ao máximo de monitores
-    # no-lstm_mode  lstm_mode deterministic
-    #[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,9,8,7] ,"lstm_mode","no-lstm_mode"
     c_demo = Campaign(datasets=[0], dense_layers=[3], thresholds=[.75], pifs=[11], rnas=["lstm_mode"], windows=[11])
 
-    #c_comparison = Campaign(datasets=[1], dense_layers=[3], thresholds=[.75], pifs=[7,11,17], rnas=["lstm_mode","deterministic"], windows=[11])
-    #mifs_done = [6, 7,11,17,10,16]
-    #mifs_all = range(1,28)
-    #mifs = [m for m in mifs_all if m not in mifs_done]
     mifs = [20, 17, 16, 12, 11, 10, 9, 8, 7]
-    c_comparison = Campaign(datasets=[1], dense_layers=[3], thresholds=[.75], pifs=mifs, #7,11,17,10,16
+    c_comparison = Campaign(datasets=[1], dense_layers=[3], thresholds=[.75], pifs=mifs,  
                             rnas=["lstm_mode","no-lstm_mode"], windows=[11])
-    c_case = Campaign(datasets=[3], dense_layers=[3], thresholds=[.75], pifs=[None], rnas=["lstm_mode"], windows=[11])
+   
     campaigns = [c_comparison]
 
     logging.info("\n\n\n")

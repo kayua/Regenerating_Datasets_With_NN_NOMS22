@@ -404,12 +404,5 @@ def main():
             analyse(args, start_time, args.size_window_left, args.size_window_right)
 
 
-# Primeiro é necessário ordenar os arquivos de entrada com o shell
-# Acho que isso deve ser implementado no run_experiments
-# ordenar por peer_id os arquivos de treino, avaliação, original e com falha
-# O arquivo sort.sh tem o comando para fazer a organização, basta utiliza-lo no run
-# Qualquer dúvida basta passar --help que tem todas as instruções lá
-
-# RM: Done get_original_ ...
 if __name__ == '__main__':
     sys.exit(main())
