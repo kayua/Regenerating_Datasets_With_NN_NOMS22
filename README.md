@@ -85,8 +85,6 @@ This study was financed in part by the Coordenação
 de Aperfeiçoamento de Pessoal de Nível Superior - Brasil
 (CAPES) - Finance Code 001. We also received funding from
 Rio Grande do Sul Research Foundation (FAPERGS) - Grant
-ARD 10/2020
-
-Nvidia – Academic Hardware Grant
+ARD 10/2020 and Nvidia – Academic Hardware Grant
 
 
