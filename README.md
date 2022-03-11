@@ -77,3 +77,16 @@ Algorithm for correcting sessions of users of large-scale networked systems base
 `keras 2.4.3`
 `setuptools 45.2.0`
 `h5py 2.10.0`
+
+## ACKNOWLEDGMENTS
+
+
+This study was financed in part by the Coordenação
+de Aperfeiçoamento de Pessoal de Nível Superior - Brasil
+(CAPES) - Finance Code 001. We also received funding from
+Rio Grande do Sul Research Foundation (FAPERGS) - Grant
+ARD 10/2020
+
+Nvidia – Academic Hardware Grant
+
+
