@@ -1,4 +1,4 @@
-# Regenerating Networked Systems’ Monitoring Traces with Neural Networks (submitted to NOMS'22)
+# Regenerating Networked Systems’ Monitoring Traces with Neural Networks (Accepted to NOMS'22)
 
 Algorithm for correcting sessions of users of large-scale networked systems based on deep learning.
 
